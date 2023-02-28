@@ -25,7 +25,7 @@ const MainContainer = () => {
 
   const searchBar = (text) => {
     const search = stories.filter((story) => {
-      return story.title.includes(text)
+      return story.title.toLowerCase().includes(text.toLowerCase())
         
     })
     setStories(search) 
